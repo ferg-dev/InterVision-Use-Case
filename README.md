@@ -1,15 +1,26 @@
-# Welcome to your CDK TypeScript project
+#Solution Description
 
-You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`ConnectSampleStack`)
-which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
+This contact center use case is for a hypothetical company that runs a chain of dog daycare facilities. There were three main considerations when creating this design.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+* Ability to initiate a contact through channel of choice: web based chat or voice contacts, traditional voice over toll-free or DID, in-app messaging or voice call, or SMS if desired.
+* Allow for secure payments to limit PCI scope without third-party tools.
+* Self-service options for common use cases: booking a reservation and managing payments.
 
-## Useful commands
+In addition to the main considerations, some extra features are used to enhance the experience for customers, aid in contact center analytics, prevent some forms of simple abuse/spam, and data-driven routing instructions.
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+CDK code only includes a small sample of Lambda/DynamoDB lookup.
+
+## Full Solution Diagram
+
+PDF/PNG of solution diagram included.
+
+## Further Enhancements
+
+There are several other areas that could later be enhanced depending on needs that arise from normal operation. Some ideas would be:
+
+* Configuration portal for dynamic routing changes
+* Expanding historical analytics by pushing data to Redshift or using the new data lake creation from Connect
+* Enable granular real-time reporting by processing Contact Events and Agent Events
+* Custom dashboards using QuickSight
+* Using Contact Lens to transcribe, create rules for searching/alerting, and perform theme detection across all contacts
+* Alternate routing for potential spam/fraudulent calls using SageMaker model and SIP media headers
