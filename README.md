@@ -13,6 +13,7 @@ CDK code only includes a small sample of Lambda/DynamoDB lookup.
 ## Full Solution Diagram
 
 PDF/PNG of solution diagram included.
+![Solution_Diagram](https://github.com/ferg-dev/connect-sample/assets/16292964/e5d5a9fd-0f7f-4482-8fb2-e0e50ab4ae07)
 
 ## Further Enhancements
 
