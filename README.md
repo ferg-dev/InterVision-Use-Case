@@ -1,4 +1,4 @@
-#Solution Description
+# Solution Description
 
 This contact center use case is for a hypothetical company that runs a chain of dog daycare facilities. There were three main considerations when creating this design.
 
